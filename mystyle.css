@@ -1,0 +1,35 @@
+#banana{
+width: 240px; 
+height: 236.7125px;
+position: relative;
+animation: catchmeifyoucan 2s;
+animation-iteration-count: infinite;
+}
+html {
+  height: 100%;
+  background: white;
+  background: radial-gradient(circle, #fff 20%, #ccc);
+  background-size: cover;
+}
+
+
+h1{
+text-align: center;
+}
+button{
+position:absolute;
+margin-left: 720px;
+padding: 20px;
+border:none;
+background-color: salmon;
+color: white;
+font-size:1.5;
+letter-spacing:2px;
+}
+
+@keyframes catchmeifyoucan{
+100%{left:0%;}
+30%{left:100%;}
+0%{left:0%;}
+
+}

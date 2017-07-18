@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+	<meta charset="utf-8">
+	<title>PUXXLE</title>
+
+	<link rel="stylesheet" media="screen" href="mystyle.css">
+	<script src="main.js"> </script>
+	<h1 id = "hache1">PUXXLE STAGE 1<br> Catch Me if you Can</h1>
+	<img id="banana" src="https://media.giphy.com/media/MxYQrB9jeGzza/giphy.gif" alt="banana" onclick="changed()" ondblclick="f2()">
+	<script>
+		
+		function changed()
+		{
+			document.getElementById("banana").src="https://media.giphy.com/media/Pz09apVCQBaMw/giphy.gif";
+			document.getElementById("hache1").innerHTML = "PUXXLE STAGE 2<br> Catch Me if you Can";
+			
+		}
+		function f2()
+		{
+			var imagere = document.getElementById("banana");
+			imagere.parentNode.removeChild(imagere);
+			document.getElementById("hache1").innerHTML = "PUXXLE FINAL STAGE<br> Catch Me if you Can";
+		
+			var button = document.createElement("button");
+			button.innerHTML = "Don't Click Me";
+			var appendit = document.getElementsByTagName("body")[0].appendChild(button);
+			button.addEventListener("mouseout", function() {alert("YOU'VE SOLVED THE PUZZLE, CONGRATS!")});
+			button.addEventListener("click", function() {alert("YOU LOOOOOOOOOOOOOOOOOOOOOOSEEEE")});
+		}
+		
+	</script>
+	
+</head>
+
+
+<body>
+</body>
+
+
+
+</html>
